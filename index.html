@@ -24,7 +24,6 @@
     <h1 id="heroTitle"></h1><h1 class="gold" id="heroHighlight"></h1>
     <p id="heroText"></p>
     <div class="buttons"><a class="btn goldbg" href="#products">Explore Collection</a><a class="btn light" href="#contact">Get in Touch</a></div>
-    <!-- নম্বর বাদ দিয়ে ফিচার তালিকা -->
     <div class="mini"><div><span>Quality Focused</span></div><div><span>Factory Network</span></div><div><span>B2B Solutions</span></div></div>
   </div>
 </section>
@@ -45,7 +44,6 @@
 <section class="section dark" id="services">
   <p class="label">WHAT WE DO</p><h2>One partner. <span>Complete sourcing support.</span></h2>
   <div class="services">
-    <!-- আর্টিকেলের ভেতর থেকেও নম্বর বাদ দেওয়া হয়েছে -->
     <article><h3>Global Sourcing</h3><p>Product and supplier sourcing aligned with your target market and specifications.</p></article>
     <article><h3>Factory Coordination</h3><p>Production coordination and communication across our manufacturing network.</p></article>
     <article><h3>Wholesale Supply</h3><p>Commercial quantities for retailers, showrooms, distributors and resellers.</p></article>
@@ -58,8 +56,16 @@
 <section class="section white" id="contact">
   <div class="contact">
     <div><p class="label">LET'S WORK TOGETHER</p><h2>Ready to source your <span>next collection?</span></h2><p>Tell us what you need — product type, quantity, target price and delivery destination.</p><div class="contact-links"><a id="callLink">📞 Call</a><a id="waLink" target="_blank">💬 WhatsApp</a><a id="fbLink" target="_blank">📘 Facebook</a></div></div>
-    <!-- টেক্সট-এরিয়া (Tell us about your requirement) সরিয়ে নেওয়া ফর্ম -->
-    <form id="form"><input id="name" placeholder="Your Name" required><input id="company" placeholder="Company Name"><input id="email" type="email" placeholder="Email Address" required><input id="product" placeholder="Product / Requirement"><button class="btn goldbg" type="submit">Send Inquiry</button><small id="msg"></small></form>
+    
+    <!-- সরাসরি জিমেইলে মেইল পাঠানোর ফর্ম -->
+    <form action="https://formspree.io/f/আপনার_আইডি" method="POST">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="text" name="Company" placeholder="Company Name">
+      <input type="email" name="_replyto" placeholder="Email Address" required>
+      <input type="text" name="Product" placeholder="Product / Requirement">
+      <button class="btn goldbg" type="submit">Send Inquiry</button>
+    </form>
+    
   </div>
 </section>
 
